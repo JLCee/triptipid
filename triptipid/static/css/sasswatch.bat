@@ -1,0 +1,1 @@
+START cmd /c sass --watch main.scss:main.css --style compressed

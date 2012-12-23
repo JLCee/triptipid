@@ -1,0 +1,156 @@
+<?php include 'header.php'; ?>
+			<div id="informative" class="main">
+<?php include 'sidebar.php'; ?>
+				<div class="content">
+					<header class="content-header">
+						<div class="breadcrumb">
+							<ul>
+								<li><a href="#">Itineraries</a></li>
+								<li class="current"><a href="#">Informative View</a></li>
+							</ul>
+						</div>
+						<p class="sub">FROM <a href="#">MANILA</a> TO <a href="#">BORACAY</a></p>
+						<div class="byline">by <a href="#">Awesome</a></div>
+					</header>
+					<section id="informative-content">
+						<div id="informative-icons">
+							<ul class="icons arrow-bottom icons-left">
+								<li></li>
+								<li></li>
+								<li class="current"></li>
+								<li></li>
+							</ul>
+							<ul class="icons arrow-bottom icons-right">
+								<li class="days">
+									<h1>5</h1>
+									<h3>DAYS</h3>
+								</li>
+								<li></li>
+							</ul>
+						</div>
+						<div id="informative-box">
+							<!--div id="overview" class="box-item">
+								Map
+							</div-->
+							<div id="activities" class="box-item">
+								<ul class="days">
+									<li class="item">
+										<div class="day"><h2>Day 1</h2></div>
+										<div class="activities">
+											<ul>
+												<li>3 X</li>
+												<li>8 X</li>
+												<li>2 X</li>
+											</ul>
+										</div>
+										<div class="table">
+											<table>
+												<tr>
+													<td>8:00 AM</td>
+													<td>Arrive at Alaminos; shop for supplies at the local supermarket near bus station</td>
+												</tr>
+												<tr>
+													<td>8:15 AM</td>
+													<td>Head to Korina's Mansion lodging via tricycle (PhP 20 for 2 persons)</td>
+												</tr>
+												<tr>
+													<td>8:25 AM</td>
+													<td>Arrive at lodging. Fix your belongings then head to the resort's beach wing!</td>
+												</tr>
+											</table>
+										</div>
+									</li>
+									<li class="item">
+										<div class="day"><h2>Day 2</h2></div>
+										<div class="activities">
+											<ul>
+												<li>3 X</li>
+												<li>8 X</li>
+												<li>2 X</li>
+											</ul>
+										</div>
+										<div class="table">
+											<table>
+												<tr>
+													<td>8:00 AM</td>
+													<td>Arrive at Alaminos; shop for supplies at the local supermarket near bus station</td>
+												</tr>
+												<tr>
+													<td>8:15 AM</td>
+													<td>Head to Korina's Mansion lodging via tricycle (PhP 20 for 2 persons)</td>
+												</tr>
+												<tr>
+													<td>8:25 AM</td>
+													<td>Arrive at lodging. Fix your belongings then head to the resort's beach wing!</td>
+												</tr>
+											</table>
+										</div>
+									</li>
+									<li class="item">
+										<div class="day"><h2>Day 2</h2></div>
+										<div class="activities">
+											<ul>
+												<li>3 X</li>
+												<li>8 X</li>
+												<li>2 X</li>
+											</ul>
+										</div>
+										<div class="table">
+											<table>
+												<tr>
+													<td>8:00 AM</td>
+													<td>Arrive at Alaminos; shop for supplies at the local supermarket near bus station</td>
+												</tr>
+												<tr>
+													<td>8:15 AM</td>
+													<td>Head to Korina's Mansion lodging via tricycle (PhP 20 for 2 persons)</td>
+												</tr>
+												<tr>
+													<td>8:25 AM</td>
+													<td>Arrive at lodging. Fix your belongings then head to the resort's beach wing!</td>
+												</tr>
+											</table>
+										</div>
+									</li>
+								</ul>
+							</div>
+							<!--div id="locations" class="box-item">
+								<ul>
+									<li class="item">
+										<div class="locationname"><h2>Spacool Relaxation Spa</h2></div>
+										<div class="gallery">
+											<div class="big"></div>
+											<div class="small"></div>
+											<div class="small"></div>
+											<div class="small last"></div>
+											<div class="clearfix"></div>
+										</div>
+										<div class="comments">
+											<h3>Author's Comments</h3>
+											<p>Lorizzle ipsum dolizzle sit amet, fizzle adipiscing elizzle. Nullam gizzle velizzle, fo volutpizzle, suscipit quis, nizzle vel, fo shizzle mah nizzle fo rizzle, mah home g-dizzle. Pellentesque bling bling tortor. Sizzle erizzle. Break it down izzle dolor fo turpizzle tempizzle fo shizzle. Mauris that's the shizzle et fo shizzle mah nizzle fo rizzle, mah home g-dizzle. Fo shizzle izzle shiz. Pellentesque fizzle rhoncizzle daahng dawg. Boofron hizzle shiz platea black. Bling bling dapibizzle. Curabitur tellus own yo', pretizzle eu, mattis ac, eleifend vitae, nunc. Get down get down fizzle. Integizzle sempizzle velit sizzle bow wow wow.</p>
+										</div>
+										<div class="clearfix"></div>
+									</li>
+									<li class="item">
+										<div class="locationname"><h2>Quick Release Spa</h2></div>
+										<div class="gallery">
+											<div class="big"></div>
+											<div class="small"></div>
+											<div class="small"></div>
+											<div class="small last"></div>
+											<div class="clearfix"></div>
+										</div>
+										<div class="comments">
+											<h3>Author's Comments</h3>
+											<p>Nulla gravida porttitor fermentum. Nam tincidunt hendrerit sem, in dapibus sapien vulputate vulputate. Donec a velit sem. Fusce sem eros, ultrices quis porta id, placerat ut dolor. Praesent eu ligula orci. Vivamus et dolor in dolor lobortis adipiscing et sed lacus. Morbi tempor vestibulum ornare. Integer in tellus et est placerat rutrum vel vitae metus. Vestibulum gravida gravida pellentesque. Sed et orci lorem.</p>
+										</div>
+										<div class="clearfix"></div>
+									</li>
+								</ul>
+							</div-->
+						</div>
+					</section>
+				</div>
+				<div id="bgcolumn-informative"></div>
+			</div>
+<?php include 'footer.php'; ?>

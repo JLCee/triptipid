@@ -1,0 +1,1465 @@
+@import url(http://fonts.googleapis.com/css?family=Arimo:400,400italic,700,700italic);
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+html,
+button,
+input,
+select,
+textarea {
+  color: #222; }
+
+body {
+  font-size: 1em;
+  line-height: 1.4; }
+
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none; }
+
+::selection {
+  background: #b3d4fc;
+  text-shadow: none; }
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0; }
+
+img {
+  vertical-align: middle; }
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0; }
+
+textarea {
+  resize: vertical; }
+
+.chromeframe {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0; }
+
+/* ==========================================================================
+   Scaffolding & Base stuff
+   ========================================================================== */
+.cf {
+  zoom: 1; }
+
+.cf:before,
+.cf:after {
+  content: "";
+  display: table; }
+
+.cf:after {
+  clear: both; }
+
+.floatleft {
+  float: left; }
+
+.floatright {
+  float: right; }
+
+.row {
+  width: 100%;
+  display: block;
+  overflow: hidden; }
+  .row:after {
+    content: '.';
+    visibility: hidden;
+    display: block;
+    height: 0;
+    clear: both; }
+  .row .col1 {
+    width: 6.87057%;
+    margin-right: 1.59574%;
+    float: left; }
+  .row .last {
+    margin-right: 0; }
+  .row .col2 {
+    width: 15.33688%;
+    margin-right: 1.59574%;
+    float: left; }
+  .row .last {
+    margin-right: 0; }
+  .row .col3 {
+    width: 23.80319%;
+    margin-right: 1.59574%;
+    float: left; }
+  .row .last {
+    margin-right: 0; }
+  .row .col4 {
+    width: 32.2695%;
+    margin-right: 1.59574%;
+    float: left; }
+  .row .last {
+    margin-right: 0; }
+  .row .col5 {
+    width: 40.73582%;
+    margin-right: 1.59574%;
+    float: left; }
+  .row .last {
+    margin-right: 0; }
+  .row .col6 {
+    width: 49.20213%;
+    margin-right: 1.59574%;
+    float: left; }
+  .row .last {
+    margin-right: 0; }
+  .row .col7 {
+    width: 57.66844%;
+    margin-right: 1.59574%;
+    float: left; }
+  .row .last {
+    margin-right: 0; }
+  .row .col8 {
+    width: 66.13475%;
+    margin-right: 1.59574%;
+    float: left; }
+  .row .last {
+    margin-right: 0; }
+  .row .col9 {
+    width: 74.60106%;
+    margin-right: 1.59574%;
+    float: left; }
+  .row .last {
+    margin-right: 0; }
+  .row .col10 {
+    width: 83.06738%;
+    margin-right: 1.59574%;
+    float: left; }
+  .row .last {
+    margin-right: 0; }
+  .row .col11 {
+    width: 91.53369%;
+    margin-right: 1.59574%;
+    float: left; }
+  .row .last {
+    margin-right: 0; }
+  .row .col12 {
+    width: 100%;
+    margin-right: 0;
+    float: left; }
+  .row .last {
+    margin-right: 0; }
+  .row *[class*='col']:last-child {
+    margin-right: 0; }
+
+button,
+div.input-prepend button.add-on,
+div.input-append button.add-on {
+  height: 30px;
+  color: #555;
+  background-color: #f0f0f0 !important;
+  background-color: #fafafa;
+  background-image: -webkit-gradient(linear, 0 0 0 100%, from(#fafafa), to(#f0f0f0));
+  background-image: -webkit-linear-gradient(top, #fafafa, #f0f0f0);
+  background-image: -o-linear-gradient(top, #fafafa, #f0f0f0);
+  background-image: linear-gradient(to bottom, #fafafa, #f0f0f0);
+  background-image: -moz-linear-gradient(top, #fafafa, #f0f0f0);
+  background-repeat: repeat-x;
+  filter: progid:dximagetransform.microsoft.gradient(startColorstr='#fafafa', endColorstr='#f0f0f0', GradientType=0);
+  filter: progid:dximagetransform.microsoft.gradient(enabled=false);
+  font: normal 0.9em "Arimo", sans-serif;
+  padding: 2px 10px;
+  border: 1px solid #ccc;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  transition: background-position 0.2s ease-in-out;
+  -webkit-transition: background-position 0.2s ease-in-out;
+  -moz-transition: background-position 0.2s ease-in-out;
+  -o-transition: background-position 0.2s ease-in-out;
+  text-shadow: 0 1px 0 #fff; }
+  button:hover,
+  div.input-prepend button.add-on:hover,
+  div.input-append button.add-on:hover {
+    background-position: 0 -10px; }
+  button:active,
+  div.input-prepend button.add-on:active,
+  div.input-append button.add-on:active {
+    padding: 3px 10px 1px;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.2); }
+
+input {
+  transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  outline: none; }
+
+input[type="text"] {
+  height: 20px;
+  color: #333;
+  font: normal 0.9em "Arimo", sans-serif;
+  margin-bottom: 10px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  box-shadow: 0 0 0 #13a6e0, inset 0 2px 1px rgba(0, 0, 0, 0.05);
+  -webkit-box-shadow: 0 0 0 #13a6e0, inset 0 2px 1px rgba(0, 0, 0, 0.05); }
+
+input[type="text"]:focus {
+  border: 1px solid #13a6e0;
+  box-shadow: 0 0 8px rgba(19, 166, 224, 0.3), inset 0 2px 1px rgba(0, 0, 0, 0.05);
+  -webkit-box-shadow: 0 0 8px rgba(19, 166, 224, 0.3), inset 0 2px 1px rgba(0, 0, 0, 0.05); }
+
+select {
+  height: 30px;
+  color: #333;
+  font: normal 0.9em "Arimo", sans-serif;
+  margin-bottom: 10px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  box-shadow: 0 0 0 #13a6e0, inset 0 2px 1px rgba(0, 0, 0, 0.05);
+  -webkit-box-shadow: 0 0 0 #13a6e0, inset 0 2px 1px rgba(0, 0, 0, 0.05); }
+
+div.input-prepend .add-on,
+div.input-append .add-on {
+  height: 20px;
+  display: inline-block;
+  background-color: #e5e5e5;
+  font: normal 0.9em "Arimo", sans-serif;
+  margin: 0;
+  padding: 5px;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.9);
+  box-shadow: inset 0 2px 1px rgba(255, 255, 255, 0.2);
+  -webkit-box-shadow: inset 0 2px 1px rgba(255, 255, 255, 0.2);
+  transition: background-color 0.2s ease-in-out;
+  -webkit-transition: background-color 0.2s ease-in-out;
+  -moz-transition: background-color 0.2s ease-in-out;
+  -o-transition: background-color 0.2s ease-in-out; }
+div.input-prepend button.add-on,
+div.input-append button.add-on {
+  height: 32px;
+  background-color: #fcfcfc;
+  transition: background-position 0.2s ease-in-out;
+  -webkit-transition: background-position 0.2s ease-in-out;
+  -moz-transition: background-position 0.2s ease-in-out;
+  -o-transition: background-position 0.2s ease-in-out; }
+
+div.input-prepend .add-on:first-child {
+  float: left;
+  border-left: 1px solid #ccc;
+  border-right: none;
+  -webkit-border-top-left-radius: 5px;
+  -moz-border-top-left-radius: 5px;
+  border-top-left-radius: 5px;
+  -webkit-border-top-right-radius: 0;
+  -moz-border-top-right-radius: 0;
+  border-top-right-radius: 0;
+  -webkit-border-bottom-right-radius: 0;
+  -moz-border-bottom-right-radius: 0;
+  border-bottom-right-radius: 0;
+  -webkit-border-bottom-left-radius: 5px;
+  -moz-border-bottom-left-radius: 5px;
+  border-bottom-left-radius: 5px; }
+div.input-prepend input[type="text"] {
+  -webkit-border-top-left-radius: 0;
+  -moz-border-top-left-radius: 0;
+  border-top-left-radius: 0;
+  -webkit-border-bottom-left-radius: 0;
+  -moz-border-bottom-left-radius: 0;
+  border-bottom-left-radius: 0; }
+
+div.input-append .add-on:last-child {
+  border-left: none;
+  border-right: 1px solid #ccc;
+  -webkit-border-top-left-radius: 0;
+  -moz-border-top-left-radius: 0;
+  border-top-left-radius: 0;
+  -webkit-border-top-right-radius: 5px;
+  -moz-border-top-right-radius: 5px;
+  border-top-right-radius: 5px;
+  -webkit-border-bottom-right-radius: 5px;
+  -moz-border-bottom-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  -webkit-border-bottom-left-radius: 0;
+  -moz-border-bottom-left-radius: 0;
+  border-bottom-left-radius: 0; }
+div.input-append input[type="text"] {
+  -webkit-border-top-right-radius: 0;
+  -moz-border-top-right-radius: 0;
+  border-top-right-radius: 0;
+  -webkit-border-bottom-right-radius: 0;
+  -moz-border-bottom-right-radius: 0;
+  border-bottom-right-radius: 0;
+  float: left; }
+
+ul.icons {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+  ul.icons li {
+    width: 60px;
+    height: 60px;
+    background-color: #aaa;
+    float: left;
+    display: inline-block;
+    cursor: pointer;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out; }
+    ul.icons li:hover {
+      background-color: #b4b4b4;
+      margin-top: -2px; }
+    ul.icons li.current {
+      background-color: #8edb62 !important;
+      position: relative; }
+      ul.icons li.current:hover {
+        background-color: #98e56c !important; }
+      ul.icons li.current:after {
+        width: 0;
+        height: 0;
+        display: block;
+        position: absolute;
+        content: ' '; }
+  ul.icons.icons-vertical {
+    padding: 0; }
+    ul.icons.icons-vertical li {
+      display: block;
+      clear: both;
+      margin: 0 auto 20px;
+      transition: all 0.2s ease-in-out;
+      -webkit-transition: all 0.2s ease-in-out;
+      -moz-transition: all 0.2s ease-in-out;
+      -o-transition: all 0.2s ease-in-out; }
+      ul.icons.icons-vertical li:not(.current):hover {
+        background-color: #b4b4b4;
+        margin-top: -2px;
+        margin-bottom: 22px; }
+  ul.icons.arrow-bottom li.current:after {
+    left: 15px;
+    bottom: -40px;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-bottom: 30px solid #f8f8f8; }
+  ul.icons.arrow-right li.current:after {
+    right: -60px;
+    top: 15px;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-right: 30px solid #f8f8f8; }
+
+.iconlabel {
+  margin-right: 20px; }
+  .iconlabel .icon,
+  .iconlabel .label {
+    height: 30px;
+    display: block;
+    float: left; }
+  .iconlabel .icon {
+    width: 30px;
+    color: #fff;
+    background-color: #ddd;
+    font: bold 1.25em "Arimo", sans-serif;
+    text-align: center;
+    line-height: 30px;
+    margin-right: 10px;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.2);
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%; }
+  .iconlabel .label {
+    font: bold 1.2em "Arimo", sans-serif;
+    line-height: 30px; }
+
+/* ==========================================================================
+   Styles
+   ========================================================================== */
+html,
+body {
+  width: 100%;
+  height: 100%;
+  min-height: 100%;
+  max-height: 100%; }
+
+body {
+  font-family: "Arimo", sans-serif; }
+
+a {
+  color: #13a6e0;
+  font: "Arimo", sans-serif;
+  text-decoration: none;
+  transition: all 0.15s ease-in-out;
+  -webkit-transition: all 0.15s ease-in-out;
+  -moz-transition: all 0.15s ease-in-out;
+  -o-transition: all 0.15s ease-in-out; }
+
+a:hover {
+  color: #24b7f1; }
+
+div#wrapper {
+  width: 100%;
+  min-width: 980px; }
+
+header#top {
+  width: 100%;
+  min-width: 980px;
+  max-width: 100%;
+  background: #303030 url("../img/top-bg.png");
+  box-shadow: inset 0 4px 0 0 rgba(0, 0, 0, 0.2), inset 0 -20px 20px -20px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: inset 0 4px 0 0 rgba(0, 0, 0, 0.2), inset 0 -20px 20px -20px rgba(0, 0, 0, 0.5); }
+  header#top hgroup {
+    width: 980px;
+    margin: 0 auto; }
+    header#top hgroup div#logo a {
+      width: 160px;
+      height: 80px;
+      background: url("../img/logo.png") center center no-repeat;
+      display: block;
+      margin-left: 20px; }
+
+div.main {
+  width: 980px;
+  margin: 0 auto;
+  position: relative; }
+  div.main div[id^='bgcolumn-'] {
+    height: 100%;
+    position: absolute;
+    top: 0;
+    z-index: -99; }
+  div.main div.content {
+    margin-right: 300px; }
+    div.main div.content header.content-header {
+      padding: 10px 30px; }
+      div.main div.content header.content-header h1.title {
+        margin: 0;
+        padding: 0;
+        line-height: 1.8em; }
+      div.main div.content header.content-header p.sub {
+        color: #aaa;
+        font-weight: bold;
+        margin: 4px 0; }
+        div.main div.content header.content-header p.sub a {
+          margin: 0 5px;
+          background-color: #eee;
+          padding: 5px 8px;
+          -webkit-border-radius: 4px;
+          -moz-border-radius: 4px;
+          border-radius: 4px;
+          text-shadow: 0 1px 0 #fff; }
+      div.main div.content header.content-header div.byline {
+        font-size: 0.8em;
+        margin-top: 0; }
+      div.main div.content header.content-header div.breadcrumb {
+        margin-top: 10px;
+        margin-bottom: 15px; }
+        div.main div.content header.content-header div.breadcrumb ul {
+          list-style: none;
+          margin: 0;
+          padding: 0;
+          display: inline-block;
+          border: 1px solid #ddd;
+          -webkit-border-radius: 5px;
+          -moz-border-radius: 5px;
+          border-radius: 5px; }
+          div.main div.content header.content-header div.breadcrumb ul li {
+            height: 24px;
+            background-color: #f0f0f0;
+            font-size: 0.9em;
+            line-height: 24px;
+            float: left;
+            position: relative;
+            padding: 0 10px;
+            transition: all 0.2s ease-in-out;
+            -webkit-transition: all 0.2s ease-in-out;
+            -moz-transition: all 0.2s ease-in-out;
+            -o-transition: all 0.2s ease-in-out; }
+            div.main div.content header.content-header div.breadcrumb ul li a {
+              height: 24px;
+              color: #777;
+              display: block;
+              line-height: 24px; }
+            div.main div.content header.content-header div.breadcrumb ul li.current {
+              background-color: #fafafa; }
+            div.main div.content header.content-header div.breadcrumb ul li:not(:first-child) {
+              padding-left: 20px; }
+            div.main div.content header.content-header div.breadcrumb ul li:not(:last-child):before {
+              width: 0;
+              height: 0;
+              display: block;
+              position: absolute;
+              top: 0;
+              right: -12px;
+              border-top: 12px solid transparent;
+              border-bottom: 12px solid transparent;
+              border-left: 10px solid #e0e0e0;
+              content: ' ';
+              z-index: 1;
+              box-shadow: -2px 0 0 #e0e0e0;
+              -webkit-box-shadow: -2px 0 0 #e0e0e0; }
+            div.main div.content header.content-header div.breadcrumb ul li:not(:last-child):after {
+              width: 0;
+              height: 0;
+              display: block;
+              position: absolute;
+              top: 0;
+              right: -10px;
+              border-top: 12px solid transparent;
+              border-bottom: 12px solid transparent;
+              border-left: 10px solid #f0f0f0;
+              content: ' ';
+              z-index: 2; }
+            div.main div.content header.content-header div.breadcrumb ul li.current:not(:last-child):after {
+              border-left: 10px solid #fafafa; }
+            div.main div.content header.content-header div.breadcrumb ul li:hover {
+              background-color: #f5f5f5; }
+              div.main div.content header.content-header div.breadcrumb ul li:hover a {
+                color: #444; }
+              div.main div.content header.content-header div.breadcrumb ul li:hover:not(:last-child):after {
+                border-left: 10px solid #f5f5f5; }
+            div.main div.content header.content-header div.breadcrumb ul li.current:hover {
+              background-color: #fcfcfc; }
+              div.main div.content header.content-header div.breadcrumb ul li.current:hover:not(:last-child):after {
+                border-left: 10px solid #fcfcfc; }
+  div.main aside.sidebar {
+    width: 300px;
+    float: right; }
+    div.main aside.sidebar header.title {
+      width: 300px;
+      height: 40px;
+      color: #fff;
+      background-color: #2bbef9;
+      background-image: -webkit-gradient(linear, 0 0 0 100%, from(#2bbef9), to(#1aade8));
+      background-image: -webkit-linear-gradient(top, #2bbef9, #1aade8);
+      background-image: -o-linear-gradient(top, #2bbef9, #1aade8);
+      background-image: linear-gradient(to bottom, #2bbef9, #1aade8);
+      background-image: -moz-linear-gradient(top, #2bbef9, #1aade8);
+      background-repeat: repeat-x;
+      filter: progid:dximagetransform.microsoft.gradient(startColorstr='#2bbef9', endColorstr='#1aade8', GradientType=0);
+      filter: progid:dximagetransform.microsoft.gradient(enabled=false);
+      font: bold 1.4em "Arimo", sans-serif;
+      line-height: 40px;
+      position: relative;
+      margin: 15px 0 15px -15px;
+      padding-left: 15px;
+      text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.4);
+      box-shadow: inset 0 3px 0 rgba(255, 255, 255, 0.1), inset 0 -3px 0 rgba(0, 0, 0, 0.05);
+      -webkit-box-shadow: inset 0 3px 0 rgba(255, 255, 255, 0.1), inset 0 -3px 0 rgba(0, 0, 0, 0.05); }
+      div.main aside.sidebar header.title:before {
+        width: 0;
+        height: 0;
+        display: block;
+        position: absolute;
+        bottom: -10px;
+        left: 0;
+        border-bottom: 10px solid transparent;
+        border-right: 15px solid #008bc6;
+        content: ' '; }
+    div.main aside.sidebar div#tryelsewhere div.form {
+      margin: 30px; }
+      div.main aside.sidebar div#tryelsewhere div.form form div.from span.add-on,
+      div.main aside.sidebar div#tryelsewhere div.form form div.to span.add-on {
+        width: 40px;
+        text-align: right; }
+      div.main aside.sidebar div#tryelsewhere div.form form div.from input,
+      div.main aside.sidebar div#tryelsewhere div.form form div.to input {
+        width: 175px; }
+      div.main aside.sidebar div#tryelsewhere div.form form div.days label {
+        width: 40px;
+        color: #333;
+        font: normal 0.9em "Arimo", sans-serif;
+        display: block;
+        text-align: right;
+        float: left;
+        padding: 6px 5px;
+        text-shadow: 0 1px 0 #fff; }
+      div.main aside.sidebar div#tryelsewhere div.form form div.days span.add-on:last-child {
+        width: 40px;
+        text-align: center; }
+      div.main aside.sidebar div#tryelsewhere div.form form div.days input {
+        width: 36px;
+        text-align: center; }
+
+div#bgcolumn-itineraries {
+  width: 300px;
+  background-color: #eee;
+  right: 0; }
+
+div#itineraries section#itineraries-list ul {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+  div#itineraries section#itineraries-list ul li {
+    height: 110px;
+    padding: 20px 30px 0;
+    margin-bottom: 20px; }
+    div#itineraries section#itineraries-list ul li div.byline {
+      font-size: 0.85em;
+      margin-top: 8px; }
+
+div.itineraries-item, div#itineraries section#itineraries-list ul li div.item {
+  height: 100px;
+  background-color: #fcfcfc;
+  background-image: -webkit-gradient(linear, 0 0 0 100%, from(#fcfcfc), to(#f3f3f3));
+  background-image: -webkit-linear-gradient(top, #fcfcfc, #f3f3f3);
+  background-image: -o-linear-gradient(top, #fcfcfc, #f3f3f3);
+  background-image: linear-gradient(to bottom, #fcfcfc, #f3f3f3);
+  background-image: -moz-linear-gradient(top, #fcfcfc, #f3f3f3);
+  background-repeat: repeat-x;
+  filter: progid:dximagetransform.microsoft.gradient(startColorstr='#fcfcfc', endColorstr='#f3f3f3', GradientType=0);
+  filter: progid:dximagetransform.microsoft.gradient(enabled=false);
+  position: relative;
+  box-shadow: inset 0 1px 0 1px rgba(255, 255, 255, 0.5), 0 1px 0 rgba(0, 0, 0, 0.03), 0 1px 5px rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: inset 0 1px 0 1px rgba(255, 255, 255, 0.5), 0 1px 0 rgba(0, 0, 0, 0.03), 0 1px 5px rgba(0, 0, 0, 0.15); }
+  div.itineraries-item h1, div#itineraries section#itineraries-list ul li div.item h1, div.itineraries-item h2, div#itineraries section#itineraries-list ul li div.item h2, div.itineraries-item h3, div#itineraries section#itineraries-list ul li div.item h3 {
+    margin: 0;
+    padding: 0; }
+  div.itineraries-item div.days, div#itineraries section#itineraries-list ul li div.item div.days,
+  div.itineraries-item div.spots,
+  div#itineraries section#itineraries-list ul li div.item div.spots,
+  div.itineraries-item div.transpo,
+  div#itineraries section#itineraries-list ul li div.item div.transpo,
+  div.itineraries-item div.price,
+  div#itineraries section#itineraries-list ul li div.item div.price {
+    width: 25%;
+    text-align: center;
+    float: left; }
+  div.itineraries-item div.days, div#itineraries section#itineraries-list ul li div.item div.days,
+  div.itineraries-item div.spots,
+  div#itineraries section#itineraries-list ul li div.item div.spots,
+  div.itineraries-item div.transpo,
+  div#itineraries section#itineraries-list ul li div.item div.transpo {
+    height: 70px;
+    padding: 15px 0; }
+    div.itineraries-item div.days h1, div#itineraries section#itineraries-list ul li div.item div.days h1,
+    div.itineraries-item div.spots h1,
+    div#itineraries section#itineraries-list ul li div.item div.spots h1,
+    div.itineraries-item div.transpo h1,
+    div#itineraries section#itineraries-list ul li div.item div.transpo h1 {
+      color: #444;
+      font-size: 3em;
+      line-height: 1em;
+      text-shadow: 0 2px 0 #fff; }
+    div.itineraries-item div.days h3, div#itineraries section#itineraries-list ul li div.item div.days h3,
+    div.itineraries-item div.spots h3,
+    div#itineraries section#itineraries-list ul li div.item div.spots h3,
+    div.itineraries-item div.transpo h3,
+    div#itineraries section#itineraries-list ul li div.item div.transpo h3 {
+      color: #666;
+      font-size: 0.9em;
+      text-shadow: 0 1px 0 #fff; }
+  div.itineraries-item div.days, div#itineraries section#itineraries-list ul li div.item div.days,
+  div.itineraries-item div.spots,
+  div#itineraries section#itineraries-list ul li div.item div.spots {
+    box-shadow: 1px 0 0 rgba(0, 0, 0, 0.1), 2px 0 0 white;
+    -webkit-box-shadow: 1px 0 0 rgba(0, 0, 0, 0.1), 2px 0 0 white; }
+  div.itineraries-item div.price, div#itineraries section#itineraries-list ul li div.item div.price {
+    background-color: #89eb5d;
+    background-image: -webkit-gradient(linear, 0 0 0 100%, from(#89eb5d), to(#67c93b));
+    background-image: -webkit-linear-gradient(top, #89eb5d, #67c93b);
+    background-image: -o-linear-gradient(top, #89eb5d, #67c93b);
+    background-image: linear-gradient(to bottom, #89eb5d, #67c93b);
+    background-image: -moz-linear-gradient(top, #89eb5d, #67c93b);
+    background-repeat: repeat-x;
+    filter: progid:dximagetransform.microsoft.gradient(startColorstr='#89eb5d', endColorstr='#67c93b', GradientType=0);
+    filter: progid:dximagetransform.microsoft.gradient(enabled=false);
+    max-width: 180px;
+    position: absolute;
+    top: 15px;
+    right: -8px;
+    padding: 8px 0; }
+    div.itineraries-item div.price h2, div#itineraries section#itineraries-list ul li div.item div.price h2, div.itineraries-item div.price h3, div#itineraries section#itineraries-list ul li div.item div.price h3 {
+      color: #fff;
+      display: inline-block;
+      text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.2); }
+    div.itineraries-item div.price h2, div#itineraries section#itineraries-list ul li div.item div.price h2 {
+      font-size: 1.9em;
+      line-height: 1.1em; }
+    div.itineraries-item div.price small, div#itineraries section#itineraries-list ul li div.item div.price small {
+      color: rgba(0, 0, 0, 0.5);
+      font-size: 0.7em;
+      display: block;
+      text-align: right;
+      padding-right: 18px;
+      line-height: 0.9em; }
+    div.itineraries-item div.price:after, div#itineraries section#itineraries-list ul li div.item div.price:after {
+      width: 0;
+      height: 0;
+      position: absolute;
+      top: -6px;
+      right: 0;
+      border-bottom: 7px solid #45a719;
+      border-right: 8px solid transparent;
+      content: ' '; }
+  div.itineraries-item div.vote, div#itineraries section#itineraries-list ul li div.item div.vote {
+    height: 26px;
+    position: absolute;
+    right: 20px;
+    bottom: -13px;
+    border: 1px solid #ddd;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px; }
+    div.itineraries-item div.vote button, div#itineraries section#itineraries-list ul li div.item div.vote button {
+      color: #666;
+      height: 26px;
+      background-color: #fafafa;
+      background-image: -webkit-gradient(linear, 0 0 0 100%, from(#fafafa), to(#eeeeee));
+      background-image: -webkit-linear-gradient(top, #fafafa, #eeeeee);
+      background-image: -o-linear-gradient(top, #fafafa, #eeeeee);
+      background-image: linear-gradient(to bottom, #fafafa, #eeeeee);
+      background-image: -moz-linear-gradient(top, #fafafa, #eeeeee);
+      background-repeat: repeat-x;
+      filter: progid:dximagetransform.microsoft.gradient(startColorstr='#fafafa', endColorstr='#eeeeee', GradientType=0);
+      filter: progid:dximagetransform.microsoft.gradient(enabled=false);
+      font: 0.8em "Arimo", sans-serif;
+      line-height: 26px;
+      float: left;
+      margin: 0;
+      padding: 0 8px;
+      border: none;
+      text-shadow: 0 -1px 0 white;
+      transition: all 0.2s ease-in-out;
+      -webkit-transition: all 0.2s ease-in-out;
+      -moz-transition: all 0.2s ease-in-out;
+      -o-transition: all 0.2s ease-in-out; }
+      div.itineraries-item div.vote button:hover, div#itineraries section#itineraries-list ul li div.item div.vote button:hover {
+        background-position: 0 13px; }
+    div.itineraries-item div.vote button:not(:last-child), div#itineraries section#itineraries-list ul li div.item div.vote button:not(:last-child) {
+      border-right: 1px solid #ddd; }
+    div.itineraries-item div.vote button:not(:first-child), div#itineraries section#itineraries-list ul li div.item div.vote button:not(:first-child) {
+      border-left: 1px solid #fafafa; }
+
+div#bgcolumn-informative {
+  width: 300px;
+  background-color: #eee;
+  right: 0; }
+
+div#informative div.content section#informative-content div#informative-icons {
+  height: 100px;
+  margin: 20px 30px 0; }
+  div#informative div.content section#informative-content div#informative-icons ul {
+    margin: 0 0 40px; }
+  div#informative div.content section#informative-content div#informative-icons ul.icons-left {
+    float: left; }
+    div#informative div.content section#informative-content div#informative-icons ul.icons-left li {
+      background-color: #dadada;
+      margin-right: 24px; }
+      div#informative div.content section#informative-content div#informative-icons ul.icons-left li:hover {
+        background-color: #e4e4e4; }
+  div#informative div.content section#informative-content div#informative-icons ul.icons-right {
+    float: right; }
+    div#informative div.content section#informative-content div#informative-icons ul.icons-right li {
+      margin-left: 24px; }
+      div#informative div.content section#informative-content div#informative-icons ul.icons-right li.days {
+        text-align: center; }
+        div#informative div.content section#informative-content div#informative-icons ul.icons-right li.days h1, div#informative div.content section#informative-content div#informative-icons ul.icons-right li.days h3 {
+          color: #fff;
+          margin: 0;
+          padding: 0;
+          text-shadow: 0 -1px 0 #666666; }
+        div#informative div.content section#informative-content div#informative-icons ul.icons-right li.days h1 {
+          font-size: 2.2em;
+          line-height: 0.9em;
+          margin-top: 5px; }
+        div#informative div.content section#informative-content div#informative-icons ul.icons-right li.days h3 {
+          font-size: 0.9em;
+          line-height: 1em;
+          letter-spacing: -1px; }
+div#informative div.content section#informative-content div#informative-box {
+  background-color: #fafafa;
+  margin: 0; }
+  div#informative div.content section#informative-content div#informative-box div.box-item {
+    padding: 30px; }
+  div#informative div.content section#informative-content div#informative-box div#activities ul,
+  div#informative div.content section#informative-content div#informative-box div#locations ul {
+    list-style: none;
+    margin: 0;
+    padding: 0; }
+    div#informative div.content section#informative-content div#informative-box div#activities ul li.item,
+    div#informative div.content section#informative-content div#informative-box div#locations ul li.item {
+      background-color: #fcfcfc;
+      margin-bottom: 30px;
+      border: 1px solid #ddd;
+      box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+      -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1); }
+      div#informative div.content section#informative-content div#informative-box div#activities ul li.item:last-child,
+      div#informative div.content section#informative-content div#informative-box div#locations ul li.item:last-child {
+        margin-bottom: 0; }
+      div#informative div.content section#informative-content div#informative-box div#activities ul li.item div.day,
+      div#informative div.content section#informative-content div#informative-box div#activities ul li.item div.locationname,
+      div#informative div.content section#informative-content div#informative-box div#locations ul li.item div.day,
+      div#informative div.content section#informative-content div#informative-box div#locations ul li.item div.locationname {
+        height: 34px;
+        background-color: #89eb5d;
+        background-image: -webkit-gradient(linear, 0 0 0 100%, from(#89eb5d), to(#67c93b));
+        background-image: -webkit-linear-gradient(top, #89eb5d, #67c93b);
+        background-image: -o-linear-gradient(top, #89eb5d, #67c93b);
+        background-image: linear-gradient(to bottom, #89eb5d, #67c93b);
+        background-image: -moz-linear-gradient(top, #89eb5d, #67c93b);
+        background-repeat: repeat-x;
+        filter: progid:dximagetransform.microsoft.gradient(startColorstr='#89eb5d', endColorstr='#67c93b', GradientType=0);
+        filter: progid:dximagetransform.microsoft.gradient(enabled=false);
+        display: inline-block;
+        position: relative;
+        margin: 10px 0 0 -10px;
+        padding: 0 12px; }
+        div#informative div.content section#informative-content div#informative-box div#activities ul li.item div.day h2,
+        div#informative div.content section#informative-content div#informative-box div#activities ul li.item div.locationname h2,
+        div#informative div.content section#informative-content div#informative-box div#locations ul li.item div.day h2,
+        div#informative div.content section#informative-content div#informative-box div#locations ul li.item div.locationname h2 {
+          color: #fff;
+          font-size: 1.4em;
+          line-height: 34px;
+          margin: 0;
+          padding: 0;
+          text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.2); }
+        div#informative div.content section#informative-content div#informative-box div#activities ul li.item div.day:after,
+        div#informative div.content section#informative-content div#informative-box div#activities ul li.item div.locationname:after,
+        div#informative div.content section#informative-content div#informative-box div#locations ul li.item div.day:after,
+        div#informative div.content section#informative-content div#informative-box div#locations ul li.item div.locationname:after {
+          width: 0;
+          height: 0;
+          position: absolute;
+          bottom: -6px;
+          left: 0;
+          border-top: 7px solid #45a719;
+          border-left: 10px solid transparent;
+          content: ' '; }
+  div#informative div.content section#informative-content div#informative-box div#activities ul.days li.item div.activities {
+    float: right;
+    margin: 10px; }
+    div#informative div.content section#informative-content div#informative-box div#activities ul.days li.item div.activities ul {
+      list-style: none;
+      margin: 0;
+      padding: 0; }
+      div#informative div.content section#informative-content div#informative-box div#activities ul.days li.item div.activities ul li {
+        color: #ffba00;
+        font: bold 1.6em "Arimo", sans-serif;
+        float: left;
+        margin-left: 16px; }
+  div#informative div.content section#informative-content div#informative-box div#activities ul.days li.item div.table {
+    padding: 10px 15px 15px; }
+    div#informative div.content section#informative-content div#informative-box div#activities ul.days li.item div.table table {
+      width: 100%;
+      color: #555;
+      font-size: 0.9em; }
+      div#informative div.content section#informative-content div#informative-box div#activities ul.days li.item div.table table tr:not(:last-child) {
+        border-bottom: 1px solid #e0e0e0; }
+      div#informative div.content section#informative-content div#informative-box div#activities ul.days li.item div.table table tr td {
+        padding: 5px; }
+        div#informative div.content section#informative-content div#informative-box div#activities ul.days li.item div.table table tr td:first-child {
+          width: 90px; }
+  div#informative div.content section#informative-content div#informative-box div#locations ul li div.gallery {
+    background-color: #f5f5f5;
+    float: right;
+    margin: 30px;
+    padding: 5px; }
+    div#informative div.content section#informative-content div#informative-box div#locations ul li div.gallery div.big {
+      width: 150px;
+      height: 150px;
+      background-color: #ddd; }
+    div#informative div.content section#informative-content div#informative-box div#locations ul li div.gallery div.small {
+      width: 48px;
+      height: 48px;
+      background-color: #ddd;
+      float: left;
+      margin-top: 3px;
+      margin-right: 3px; }
+      div#informative div.content section#informative-content div#informative-box div#locations ul li div.gallery div.small.last {
+        margin-right: 0; }
+  div#informative div.content section#informative-content div#informative-box div#locations ul li div.comments {
+    font-size: 0.8em;
+    margin: 20px; }
+    div#informative div.content section#informative-content div#informative-box div#locations ul li div.comments p {
+      color: #444;
+      line-height: 1.6em; }
+
+div.dashboard div.content {
+  margin: 0; }
+  div.dashboard div.content section.dashboard-icons ul {
+    list-style: none;
+    margin: 30px;
+    padding: 0; }
+    div.dashboard div.content section.dashboard-icons ul li {
+      width: 70px;
+      height: 70px;
+      float: left;
+      margin-right: 30px; }
+      div.dashboard div.content section.dashboard-icons ul li.current:after {
+        bottom: -50px;
+        left: 20px; }
+  div.dashboard div.content header.content-header {
+    margin-top: 50px;
+    padding: 15px 30px 10px;
+    background-color: #f8f8f8; }
+    div.dashboard div.content header.content-header h1.title {
+      color: #8edb62;
+      letter-spacing: -0.5px; }
+  div.dashboard div.content section.dashboard-content {
+    padding: 0 30px 30px;
+    background-color: #f8f8f8; }
+
+div#user div.content {
+  margin: 0; }
+  div#user div.content section#user-content {
+    padding: 30px; }
+    div#user div.content section#user-content h3 {
+      color: #777;
+      margin: 0 0 10px;
+      padding: 0; }
+    div#user div.content section#user-content div#user-left {
+      width: 200px;
+      float: left; }
+      div#user div.content section#user-content div#user-left div#user-image {
+        margin-bottom: 30px; }
+        div#user div.content section#user-content div#user-left div#user-image div.image {
+          width: 198px;
+          height: 198px;
+          background-color: #eee;
+          border-top: 1px solid #ccc;
+          border-left: 1px solid #ccc;
+          border-right: 1px solid #ccc;
+          border-bottom: none; }
+        div#user div.content section#user-content div#user-left div#user-image button {
+          width: 200px;
+          -webkit-border-top-left-radius: 0;
+          -moz-border-top-left-radius: 0;
+          border-top-left-radius: 0;
+          -webkit-border-top-right-radius: 0;
+          -moz-border-top-right-radius: 0;
+          border-top-right-radius: 0; }
+      div#user div.content section#user-content div#user-left div#user-social ul.networks {
+        text-align: center;
+        list-style: none;
+        margin: 0;
+        padding: 0; }
+        div#user div.content section#user-content div#user-left div#user-social ul.networks li {
+          width: 40px;
+          height: 40px;
+          background-color: #7c868d;
+          display: inline-block;
+          margin: 0 5px 5px 0;
+          -webkit-border-radius: 50%;
+          -moz-border-radius: 50%;
+          border-radius: 50%; }
+    div#user div.content section#user-content div#user-right {
+      margin-left: 300px; }
+      div#user div.content section#user-content div#user-right div#user-stats {
+        margin-bottom: 30px; }
+        div#user div.content section#user-content div#user-right div#user-stats div.posts {
+          float: left; }
+          div#user div.content section#user-content div#user-right div#user-stats div.posts div.icon {
+            width: 40px;
+            height: 40px;
+            background-color: #1cafe9;
+            float: left;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            border-radius: 50%; }
+          div#user div.content section#user-content div#user-right div#user-stats div.posts div.num {
+            color: #1cafe9;
+            font: bold 1.6em "Arimo", sans-serif;
+            line-height: 40px;
+            float: left;
+            margin-right: 20px;
+            padding: 0 10px; }
+        div#user div.content section#user-content div#user-right div#user-stats div.rating div.text {
+          color: #999;
+          font: bold 1.2em "Arimo", sans-serif;
+          line-height: 40px;
+          float: left;
+          margin-right: 20px;
+          padding: 0 10px; }
+        div#user div.content section#user-content div#user-right div#user-stats div.rating div.stars {
+          height: 40px;
+          float: none;
+          clear: right; }
+      div#user div.content section#user-content div#user-right div#user-details ul {
+        list-style: none;
+        margin: 0;
+        padding: 0; }
+        div#user div.content section#user-content div#user-right div#user-details ul li {
+          height: 80px; }
+          div#user div.content section#user-content div#user-right div#user-details ul li label {
+            color: #999;
+            font: bold 1.2em "Arimo", sans-serif;
+            line-height: 36px;
+            display: block; }
+          div#user div.content section#user-content div#user-right div#user-details ul li div input[type='text'] {
+            width: 200px; }
+          div#user div.content section#user-content div#user-right div#user-details ul li div span.add-on:first-child {
+            width: 89px;
+            text-align: center; }
+          div#user div.content section#user-content div#user-right div#user-details ul li div button.add-on:last-child {
+            width: 50px; }
+          div#user div.content section#user-content div#user-right div#user-details ul li div.input-username input[type='text'] {
+            width: 100px; }
+          div#user div.content section#user-content div#user-right div#user-details ul li br {
+            width: 1px;
+            height: 1px;
+            line-height: 1px;
+            display: inline; }
+
+div#create div.content header.content-header div.breadcrumb {
+  margin-bottom: 0; }
+div#create div.content section#create-content div#steps ul.bullets {
+  width: 100%;
+  text-align: center;
+  display: block;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  z-index: 1; }
+  div#create div.content section#create-content div#steps ul.bullets:before {
+    width: 100%;
+    height: 6px;
+    background-color: #eee;
+    display: block;
+    position: absolute;
+    top: 22px;
+    left: 0;
+    content: ' ';
+    z-index: -1; }
+  div#create div.content section#create-content div#steps ul.bullets li {
+    width: 40px;
+    height: 40px;
+    color: #fff;
+    background-color: #ccc;
+    font: bold 1.6em "Arimo", sans-serif;
+    line-height: 40px;
+    display: inline-block;
+    margin: 0 30px;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    border: 5px solid #fff;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out; }
+    div#create div.content section#create-content div#steps ul.bullets li:hover {
+      background-color: #d1d1d1; }
+    div#create div.content section#create-content div#steps ul.bullets li.current {
+      background-color: #8edb62; }
+    div#create div.content section#create-content div#steps ul.bullets li.current:hover {
+      background-color: #93e067; }
+div#create div.content section#create-content div#steps form ul.step-content {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+  div#create div.content section#create-content div#steps form ul.step-content li h1 {
+    font-size: 1.6em;
+    color: #8edb62; }
+  div#create div.content section#create-content div#steps form ul.step-content li label, div#create div.content section#create-content div#steps form ul.step-content li input, div#create div.content section#create-content div#steps form ul.step-content li select {
+    float: left; }
+  div#create div.content section#create-content div#steps form ul.step-content li label {
+    width: 180px;
+    color: #555;
+    font: bold 1.2em "Arimo", sans-serif;
+    line-height: 30px; }
+  div#create div.content section#create-content div#steps form ul.step-content li input, div#create div.content section#create-content div#steps form ul.step-content li select {
+    clear: right; }
+  div#create div.content section#create-content div#steps form ul.step-content li label {
+    clear: left; }
+  div#create div.content section#create-content div#steps form ul.step-content li.step-1 input {
+    width: 188px; }
+  div#create div.content section#create-content div#steps form ul.step-content li.step-1 select {
+    width: 200px; }
+  div#create div.content section#create-content div#steps form ul.step-content li.step-2 ul.days {
+    list-style: none;
+    margin: 0;
+    padding: 40px 0 30px; }
+    div#create div.content section#create-content div#steps form ul.step-content li.step-2 ul.days li.day {
+      background-color: #fcfcfc;
+      border: 1px solid #ccc; }
+      div#create div.content section#create-content div#steps form ul.step-content li.step-2 ul.days li.day div.day-num {
+        height: 36px;
+        background-color: #89eb5d;
+        background-image: -webkit-gradient(linear, 0 0 0 100%, from(#89eb5d), to(#67c93b));
+        background-image: -webkit-linear-gradient(top, #89eb5d, #67c93b);
+        background-image: -o-linear-gradient(top, #89eb5d, #67c93b);
+        background-image: linear-gradient(to bottom, #89eb5d, #67c93b);
+        background-image: -moz-linear-gradient(top, #89eb5d, #67c93b);
+        background-repeat: repeat-x;
+        filter: progid:dximagetransform.microsoft.gradient(startColorstr='#89eb5d', endColorstr='#67c93b', GradientType=0);
+        filter: progid:dximagetransform.microsoft.gradient(enabled=false);
+        display: inline-block;
+        position: relative;
+        margin: -1px 0 0 -10px;
+        padding: 0 12px;
+        float: left; }
+        div#create div.content section#create-content div#steps form ul.step-content li.step-2 ul.days li.day div.day-num h2 {
+          color: #fff;
+          font-size: 1.4em;
+          line-height: 36px;
+          margin: 0;
+          padding: 0;
+          text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.2); }
+        div#create div.content section#create-content div#steps form ul.step-content li.step-2 ul.days li.day div.day-num:after {
+          width: 0;
+          height: 0;
+          position: absolute;
+          bottom: -6px;
+          left: 0;
+          border-top: 7px solid #45a719;
+          border-left: 10px solid transparent;
+          content: ' '; }
+      div#create div.content section#create-content div#steps form ul.step-content li.step-2 ul.days li.day div.tabs {
+        height: 34px;
+        background-color: #eee;
+        border-bottom: 1px solid #ddd; }
+        div#create div.content section#create-content div#steps form ul.step-content li.step-2 ul.days li.day div.tabs div.itinerary,
+        div#create div.content section#create-content div#steps form ul.step-content li.step-2 ul.days li.day div.tabs div.cost {
+          width: 100px;
+          height: 34px;
+          background-color: #f5f5f5;
+          float: left;
+          border-right: 1px solid #ddd;
+          cursor: pointer; }
+          div#create div.content section#create-content div#steps form ul.step-content li.step-2 ul.days li.day div.tabs div.itinerary.current,
+          div#create div.content section#create-content div#steps form ul.step-content li.step-2 ul.days li.day div.tabs div.cost.current {
+            height: 35px;
+            background-color: #FFF; }
+        div#create div.content section#create-content div#steps form ul.step-content li.step-2 ul.days li.day div.tabs div.hide {
+          width: 34px;
+          height: 34px;
+          float: right;
+          position: relative;
+          cursor: pointer; }
+          div#create div.content section#create-content div#steps form ul.step-content li.step-2 ul.days li.day div.tabs div.hide:before {
+            width: 0;
+            height: 0;
+            display: block;
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            border-left: 8px solid transparent;
+            border-right: 8px solid transparent;
+            border-bottom: 15px solid #7dca51;
+            content: ' '; }
+          div#create div.content section#create-content div#steps form ul.step-content li.step-2 ul.days li.day div.tabs div.hide:hover:before {
+            border-bottom: 15px solid #8edb62; }
+      div#create div.content section#create-content div#steps form ul.step-content li.step-2 ul.days li.day div.itinerary-info,
+      div#create div.content section#create-content div#steps form ul.step-content li.step-2 ul.days li.day div.cost-info {
+        padding: 30px; }
+        div#create div.content section#create-content div#steps form ul.step-content li.step-2 ul.days li.day div.itinerary-info table,
+        div#create div.content section#create-content div#steps form ul.step-content li.step-2 ul.days li.day div.cost-info table {
+          width: 100%;
+          margin: 0 auto; }
+          div#create div.content section#create-content div#steps form ul.step-content li.step-2 ul.days li.day div.itinerary-info table thead tr td,
+          div#create div.content section#create-content div#steps form ul.step-content li.step-2 ul.days li.day div.itinerary-info table tbody tr td,
+          div#create div.content section#create-content div#steps form ul.step-content li.step-2 ul.days li.day div.itinerary-info table tfoot tr td,
+          div#create div.content section#create-content div#steps form ul.step-content li.step-2 ul.days li.day div.cost-info table thead tr td,
+          div#create div.content section#create-content div#steps form ul.step-content li.step-2 ul.days li.day div.cost-info table tbody tr td,
+          div#create div.content section#create-content div#steps form ul.step-content li.step-2 ul.days li.day div.cost-info table tfoot tr td {
+            padding: 0 5px; }
+          div#create div.content section#create-content div#steps form ul.step-content li.step-2 ul.days li.day div.itinerary-info table thead tr td,
+          div#create div.content section#create-content div#steps form ul.step-content li.step-2 ul.days li.day div.cost-info table thead tr td {
+            color: #8edb62;
+            font: bold 1em "Arimo", sans-serif;
+            padding: 5px 5px 10px; }
+      div#create div.content section#create-content div#steps form ul.step-content li.step-2 ul.days li.day div.itinerary-info table tbody tr.addactivity {
+        padding-top: 20px; }
+      div#create div.content section#create-content div#steps form ul.step-content li.step-2 ul.days li.day div.itinerary-info table tbody tr td.icon {
+        width: 50px;
+        height: 32px; }
+        div#create div.content section#create-content div#steps form ul.step-content li.step-2 ul.days li.day div.itinerary-info table tbody tr td.icon div {
+          width: 30px;
+          height: 30px;
+          background-color: #ffba00;
+          -webkit-border-radius: 50%;
+          -moz-border-radius: 50%;
+          border-radius: 50%; }
+      div#create div.content section#create-content div#steps form ul.step-content li.step-2 ul.days li.day div.itinerary-info table tbody tr td.time select {
+        width: 110px;
+        margin-top: 9px; }
+      div#create div.content section#create-content div#steps form ul.step-content li.step-2 ul.days li.day div.itinerary-info table tbody tr td.label {
+        color: #666;
+        font: bold 1em "Arimo", sans-serif;
+        text-align: right; }
+      div#create div.content section#create-content div#steps form ul.step-content li.step-2 ul.days li.day div.itinerary-info table tbody tr td.description input {
+        width: 640px;
+        margin-top: 9px; }
+      div#create div.content section#create-content div#steps form ul.step-content li.step-2 ul.days li.day div.itinerary-info table tbody tr td.activitylabel {
+        padding-top: 20px; }
+      div#create div.content section#create-content div#steps form ul.step-content li.step-2 ul.days li.day div.itinerary-info table tbody tr td.activitybuttons {
+        padding-top: 20px; }
+        div#create div.content section#create-content div#steps form ul.step-content li.step-2 ul.days li.day div.itinerary-info table tbody tr td.activitybuttons ul {
+          list-style: none;
+          margin: 0;
+          padding: 0; }
+          div#create div.content section#create-content div#steps form ul.step-content li.step-2 ul.days li.day div.itinerary-info table tbody tr td.activitybuttons ul li {
+            width: 36px;
+            height: 36px;
+            background-color: #ddd;
+            float: left;
+            margin-right: 10px;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            border-radius: 50%; }
+      div#create div.content section#create-content div#steps form ul.step-content li.step-2 ul.days li.day div.itinerary-info table tbody tr td.order {
+        width: 20px; }
+        div#create div.content section#create-content div#steps form ul.step-content li.step-2 ul.days li.day div.itinerary-info table tbody tr td.order div {
+          width: 20px;
+          height: 32px;
+          position: relative;
+          cursor: pointer; }
+          div#create div.content section#create-content div#steps form ul.step-content li.step-2 ul.days li.day div.itinerary-info table tbody tr td.order div:before {
+            width: 0;
+            height: 0;
+            display: block;
+            position: absolute;
+            top: 5px;
+            left: 2px;
+            border-left: 8px solid transparent;
+            border-right: 8px solid transparent;
+            border-bottom: 15px solid #ccc;
+            content: ' '; }
+          div#create div.content section#create-content div#steps form ul.step-content li.step-2 ul.days li.day div.itinerary-info table tbody tr td.order div:hover:before {
+            border-bottom: 15px solid #ddd; }
+      div#create div.content section#create-content div#steps form ul.step-content li.step-2 ul.days li.day div.cost-info table tbody tr td.activity {
+        width: 400px; }
+        div#create div.content section#create-content div#steps form ul.step-content li.step-2 ul.days li.day div.cost-info table tbody tr td.activity input {
+          width: 400px; }
+      div#create div.content section#create-content div#steps form ul.step-content li.step-2 ul.days li.day div.cost-info table tbody tr td.cost {
+        width: 200px; }
+        div#create div.content section#create-content div#steps form ul.step-content li.step-2 ul.days li.day div.cost-info table tbody tr td.cost input {
+          width: 200px; }
+      div#create div.content section#create-content div#steps form ul.step-content li.step-2 ul.days li.day div.cost-info table tbody tr td.costtype {
+        width: 150px; }
+        div#create div.content section#create-content div#steps form ul.step-content li.step-2 ul.days li.day div.cost-info table tbody tr td.costtype select {
+          width: 150px; }
+      div#create div.content section#create-content div#steps form ul.step-content li.step-2 ul.days li.day div.cost-info table tbody tr td.delete {
+        width: 30px;
+        height: 30px !important;
+        padding: 0 !important; }
+        div#create div.content section#create-content div#steps form ul.step-content li.step-2 ul.days li.day div.cost-info table tbody tr td.delete button {
+          width: 30px;
+          height: 30px;
+          background-color: #ccc;
+          margin: 0;
+          border: none;
+          -webkit-border-radius: 50%;
+          -moz-border-radius: 50%;
+          border-radius: 50%; }
+      div#create div.content section#create-content div#steps form ul.step-content li.step-2 ul.days li.day div.cost-info table tfoot tr td {
+        vertical-align: middle; }
+      div#create div.content section#create-content div#steps form ul.step-content li.step-2 ul.days li.day div.cost-info table tfoot tr td.addcost span {
+        height: 30px;
+        color: #666;
+        font: bold 1em "Arimo", sans-serif;
+        line-height: 30px;
+        display: block; }
+        div#create div.content section#create-content div#steps form ul.step-content li.step-2 ul.days li.day div.cost-info table tfoot tr td.addcost span button {
+          width: 30px;
+          height: 30px;
+          background-color: #ccc;
+          margin: 0;
+          border: none;
+          -webkit-border-radius: 50%;
+          -moz-border-radius: 50%;
+          border-radius: 50%; }
+      div#create div.content section#create-content div#steps form ul.step-content li.step-2 ul.days li.day div.cost-info table tfoot tr td.totalcost div.single,
+      div#create div.content section#create-content div#steps form ul.step-content li.step-2 ul.days li.day div.cost-info table tfoot tr td.totalcost div.group {
+        height: 30px;
+        float: left;
+        margin-right: 30px; }
+        div#create div.content section#create-content div#steps form ul.step-content li.step-2 ul.days li.day div.cost-info table tfoot tr td.totalcost div.single div,
+        div#create div.content section#create-content div#steps form ul.step-content li.step-2 ul.days li.day div.cost-info table tfoot tr td.totalcost div.group div {
+          background-color: #8edb62; }
+        div#create div.content section#create-content div#steps form ul.step-content li.step-2 ul.days li.day div.cost-info table tfoot tr td.totalcost div.single span,
+        div#create div.content section#create-content div#steps form ul.step-content li.step-2 ul.days li.day div.cost-info table tfoot tr td.totalcost div.group span {
+          color: #8edb62; }
+      div#create div.content section#create-content div#steps form ul.step-content li.step-2 ul.days li.day div.cost-info table tfoot tr td.totalcost div.group {
+        clear: right; }
+
+div#myitineraries div.content section#myitineraries-content div#statistics,
+div#myitineraries div.content section#myitineraries-content div#badges {
+  width: 460px;
+  float: left; }
+  div#myitineraries div.content section#myitineraries-content div#statistics div.title,
+  div#myitineraries div.content section#myitineraries-content div#badges div.title {
+    color: #666;
+    font: bold 1.2em "Arimo", sans-serif;
+    margin-bottom: 15px; }
+  div#myitineraries div.content section#myitineraries-content div#statistics ul,
+  div#myitineraries div.content section#myitineraries-content div#badges ul {
+    list-style: none;
+    margin: 0;
+    padding: 0; }
+    div#myitineraries div.content section#myitineraries-content div#statistics ul li,
+    div#myitineraries div.content section#myitineraries-content div#badges ul li {
+      display: inline-block; }
+div#myitineraries div.content section#myitineraries-content div#statistics ul li div.icon {
+  background-color: #13a6e0; }
+div#myitineraries div.content section#myitineraries-content div#statistics ul li span.label {
+  color: #13a6e0; }
+div#myitineraries div.content section#myitineraries-content div#badges ul li {
+  margin-right: 10px; }
+  div#myitineraries div.content section#myitineraries-content div#badges ul li div {
+    width: 40px;
+    height: 40px;
+    background-color: #8edb62;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%; }
+div#myitineraries div.content section#myitineraries-content div#itineraries-list {
+  margin-top: 30px; }
+  div#myitineraries div.content section#myitineraries-content div#itineraries-list div.title {
+    color: #666;
+    font: bold 1.2em "Arimo", sans-serif;
+    margin-bottom: 15px; }
+  div#myitineraries div.content section#myitineraries-content div#itineraries-list ul {
+    list-style: none;
+    margin: 0;
+    padding: 0; }
+    div#myitineraries div.content section#myitineraries-content div#itineraries-list ul li div.list-title.iconlabel {
+      margin-bottom: 10px; }
+      div#myitineraries div.content section#myitineraries-content div#itineraries-list ul li div.list-title.iconlabel div.icon {
+        width: 40px;
+        height: 40px;
+        color: #fff;
+        background-color: #13a6e0;
+        font-size: 1.5em;
+        line-height: 40px; }
+      div#myitineraries div.content section#myitineraries-content div#itineraries-list ul li div.list-title.iconlabel div.label {
+        height: 40px;
+        font-size: 1.4em;
+        line-height: 40px; }
+        div#myitineraries div.content section#myitineraries-content div#itineraries-list ul li div.list-title.iconlabel div.label span {
+          color: #13a6e0; }
+    div#myitineraries div.content section#myitineraries-content div#itineraries-list ul li div.list-info {
+      width: 780px;
+      margin-left: 50px;
+      float: left; }
+    div#myitineraries div.content section#myitineraries-content div#itineraries-list ul li div.list-options {
+      width: 70px;
+      float: right;
+      margin-left: 20px; }
+      div#myitineraries div.content section#myitineraries-content div#itineraries-list ul li div.list-options a {
+        color: #ffba00;
+        font: bold 1em "Arimo", sans-serif;
+        text-decoration: none;
+        display: block;
+        margin-bottom: 10px; }
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+.ir {
+  background-color: transparent;
+  border: 0;
+  overflow: hidden;
+  /* IE 6/7 fallback */
+  *text-indent: -9999px; }
+
+.ir:before {
+  content: "";
+  display: block;
+  width: 0;
+  height: 100%; }
+
+.hidden {
+  display: none !important;
+  visibility: hidden; }
+
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px; }
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto; }
+
+.invisible {
+  visibility: hidden; }
+
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table; }
+
+.clearfix:after {
+  clear: both; }
+
+.clearfix {
+  *zoom: 1; }
+
+/* ==========================================================================
+   Print styles.
+   ========================================================================== */
+@media print {
+  * {
+    background: transparent !important;
+    color: #000 !important;
+    box-shadow: none !important;
+    text-shadow: none !important; }
+
+  a,
+  a:visited {
+    text-decoration: underline; }
+
+  a[href]:after {
+    content: " (" attr(href) ")"; }
+
+  abbr[title]:after {
+    content: " (" attr(title) ")"; }
+
+  .ir a:after,
+  a[href^="javascript:"]:after,
+  a[href^="#"]:after {
+    content: ""; }
+
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid; }
+
+  thead {
+    display: table-header-group;
+    /* h5bp.com/t */ }
+
+  tr,
+  img {
+    page-break-inside: avoid; }
+
+  img {
+    max-width: 100% !important; }
+
+  @page {
+    margin: 0.5cm; }
+
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3; }
+
+  h2,
+  h3 {
+    page-break-after: avoid; } }
